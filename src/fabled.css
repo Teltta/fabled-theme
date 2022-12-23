@@ -1,0 +1,18 @@
+/* Color stuff */
+.theme-dark {
+  --background-primary: #0e0e0e !important;
+  --background-secondary: #000000 !important;
+  --background-secondary-alt: #0c0c0c !important;
+  --background-tertiary: #0c0c0c !important;
+  --background-accent: #131313 !important;
+  --background-floating: #141414 !important;
+  --background-mobile-secondary: #2e3035 !important;
+  --background-mobile-secondary: #202020 !important;
+  --background-modifier-hover: #252525 !important;
+  --background-modifier-active: #333333 !important;
+  --background-modifier-selected: #252525 !important;
+  --background-modifier-accent: hsla(0,0%,100%,0.06) !important;
+  --background-mentioned: rgba(250, 168, 26, 0.103) !important;
+  --background-mentioned-hover: rgba(250,166,26,0.08) !important;
+  --background-message-hover: rgba(0, 0, 0, 0.11) !important;
+}

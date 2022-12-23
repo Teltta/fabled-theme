@@ -1,0 +1,18 @@
+{
+  "id": "dev.replugged.FabledTheme",
+  "name": "Fabled",
+  "description": "Minimalistic(ish) Discord theme with soft colors.",
+  "author": {
+    "name": "Teltta",
+    "discordID": "365145249074642956",
+    "github": "Teltta"
+  },
+  "version": "1.0.2",
+  "updater": {
+    "type": "github",
+    "id": "Teltta/theme-template"
+  },
+  "license": "MIT",
+  "type": "replugged-theme",
+  "main": "src/fabled.css"
+}
