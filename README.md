@@ -1,3 +1,4 @@
+# Fabled Theme For Replugged
 ## Prerequisites
 
 - NodeJS
@@ -11,9 +12,6 @@
 3. Install dependencies: `pnpm i`
 4. Build the theme: `pnpm run build`
 5. Reload Discord to load the theme
-
-The unmodified theme replaces the Discord font with the old Whitney font. Credit to
-[@overimagine1](https://github.com/Overimagine1/old-discord-font) for the snippet!
 
 ## Troubleshooting
 
