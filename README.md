@@ -13,6 +13,16 @@
 4. Build the theme: `pnpm run build`
 5. Reload Discord to load the theme
 
+Or
+
+1. Download
+[this file](https://github.com/Teltta/fabled-theme/releases/latest/download/fabled-theme.zip)
+.
+2. Extract it into your themes folder.
+
+Windows: `%APPDATA%\replugged\themes`
+Linux: `~/.config/replugged/themes`
+
 ## Troubleshooting
 
 ### Make sure Replugged is installed and running.

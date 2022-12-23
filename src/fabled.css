@@ -140,7 +140,7 @@
 }
 .avatarWrapper-1B9FTW {
   min-width: 20% !important;
-  background-color: #000 !important;
+  background-color: var(--input-background) !important;
   padding: 6px 7px 6px 0px !important;
   margin: 0px 4px 0px 2px !important;
 }
@@ -148,5 +148,10 @@
   min-width: 40% !important;
   margin-left: 4px !important;
   margin-right: 4px !important;
-  background-color: #000 !important;
+  background-color: var(--input-background) !important;
+}
+
+/* No Rounding */
+.buttons-3dF5Kd>.wrapper-2vIMkT, .menu-1QACrS, .labelContainer-2vJzYL, .embedFull-1HGV2S {
+  border-radius: 0px !important;
 }
