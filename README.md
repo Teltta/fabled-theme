@@ -1,9 +1,4 @@
 # Fabled Theme For Replugged
-## Prerequisites
-
-- NodeJS
-- pnpm: `npm i -g pnpm`
-- [Replugged](https://github.com/replugged-org/replugged#installation)
 
 ## Install
 
