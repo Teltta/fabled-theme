@@ -1,18 +1,152 @@
 /* Color stuff */
 .theme-dark {
-  --background-primary: #0e0e0e !important;
-  --background-secondary: #000000 !important;
-  --background-secondary-alt: #0c0c0c !important;
-  --background-tertiary: #0c0c0c !important;
-  --background-accent: #131313 !important;
-  --background-floating: #141414 !important;
-  --background-mobile-secondary: #2e3035 !important;
-  --background-mobile-secondary: #202020 !important;
-  --background-modifier-hover: #252525 !important;
-  --background-modifier-active: #333333 !important;
-  --background-modifier-selected: #252525 !important;
-  --background-modifier-accent: hsla(0,0%,100%,0.06) !important;
-  --background-mentioned: rgba(250, 168, 26, 0.103) !important;
-  --background-mentioned-hover: rgba(250,166,26,0.08) !important;
-  --background-message-hover: rgba(0, 0, 0, 0.11) !important;
+  --background-primary: #22272e !important;
+  --background-secondary: #1d2229 !important;
+  --background-secondary-alt: #181d24 !important;
+  --background-tertiary: #13181f !important;
+
+  --channeltextarea-background: #2d333b !important;
+  --input-background: #10151c !important;
+  --modal-background: var(--background-secondary) !important;
+
+  --background-modifier-selected: #1d2b40 !important;
+  --background-modifier-hover: #1b2636 !important;
+}
+
+/* Channels */
+.selected-2TbFuo, .modeSelected-3DmyhH {
+  background-color: var(--background-modifier-selected) !important;
+}
+.containerDefault-YUSmu3:hover {
+  background-color: var(--background-modifier-hover) !important;
+}
+.containerDefault-YUSmu3 {
+  border-radius: 0px !important;
+  opacity: 1 !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* User Banners */
+.banner-2boKnS {
+  background-color: var(--background-secondary-alt) !important;
+}
+.popoutBanner-116rVDY {
+  background-color: var(--background-secondary-alt) !important;
+}
+.profileBanner-33-uE1 {
+  background-color: var(--background-secondary-alt) !important;
+}
+.settingsBanner-15-pZk {
+  background-color: var(--background-secondary-alt) !important;
+}
+
+
+/*Mac topbar buttons*/
+.winButton-3UMjdg > svg {
+  display: none;
+}
+.winButton-3UMjdg:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.winButton-3UMjdg {
+  pointer-events: none;
+  margin-left: -3px;
+}
+
+.winButton-3UMjdg::after {
+  content: "";
+  padding: 7px;
+  border-radius: 50px;
+  pointer-events: fill;
+}
+.winButtonClose-3Q8ZH5 {
+  margin-right: 3px;
+}
+.winButtonClose-3Q8ZH5::after {
+  background-color: #FF605C;
+}
+.winButtonClose-3Q8ZH5:hover::after {
+  background-color: rgba(255, 96, 92, 0.5);
+}
+.winButtonMinMax-3RsPUg[aria-label="Maximize"]::after {
+  background-color: #FFBD44;
+}
+.winButtonMinMax-3RsPUg[aria-label="Maximize"]:hover::after {
+  background-color: rgba(255, 189, 68, 0.5);
+}
+.winButtonMinMax-3RsPUg[aria-label="Minimize"]::after {
+  background-color: #00CA4E;
+}
+.winButtonMinMax-3RsPUg[aria-label="Minimize"]:hover::after {
+  background-color: rgba(0, 202, 78, 0.5);
+}
+
+/* Reactions */
+.reaction-3vwAF2 {
+  border-radius: 0px !important;
+  background-color: var(--background-secondary-alt) !important;
+}
+.reactionMe-1PwQAc {
+  background-color: var(--brand-experiment-30a) !important;
+}
+
+/* Search Bar */
+.searchBar-jGtisZ {
+  width: 28px;
+  transition: width 0.3s ease-in-out;
+  border-radius: 0px;
+}
+
+/* Hide Useless Buttons In Input Field */
+.button-f2h6uQ[aria-label="Send a gift"], .button-f2h6uQ[aria-label="Open GIF picker"], .button-f2h6uQ[aria-label="Open sticker picker"] {
+  display: None;
+}
+
+/* Input Field */
+.form-3gdLxP {
+  background-color: var(--channeltextarea-background) !important;
+}
+.form-3gdLxP::before {
+  display: none !important;
+}
+.buttons-uaqb-5 {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.channelTextArea-1FufC0:hover .buttons-uaqb-5 {
+  opacity: 1.0;
+}
+.channelTextAreaDisabled-1p2fQv {
+  background-color: var(--channeltextarea-background) !important;
+}
+
+/* Search Modal Thing & Threads */
+.searchResultsWrap-5RVOkx {
+  width: 520px !important;
+}
+.searchOption-3u1gRt::after {
+  display: none !important;
+}
+.container-3XgAHv {
+  width: 40vw !important;
+}
+
+/* User Info Field */
+.container-YkUktl > .avatarWrapper-1B9FTW {
+  content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 3 24 21' width='30px' height='30px' fill='%23b9bbbe'> <circle cx='12' cy='10' r='5' /> <circle cx='12' cy='24' r='9'/> </svg>") !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+.avatarWrapper-1B9FTW {
+  min-width: 20% !important;
+  background-color: #000 !important;
+  padding: 6px 7px 6px 0px !important;
+  margin: 0px 4px 0px 2px !important;
+}
+.container-YkUktl > .directionRow-2Iu2A9 > .button-12Fmur {
+  min-width: 40% !important;
+  margin-left: 4px !important;
+  margin-right: 4px !important;
+  background-color: #000 !important;
 }
