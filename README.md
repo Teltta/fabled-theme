@@ -4,20 +4,10 @@
 
 ## Install
 
-1. Clone this repository and cd into it
-2. Install dependencies: `pnpm i`
-3. Build the theme: `pnpm run build`
-4. Reload Discord to load the theme
-
-Or
-
-1. Download
-[this file](https://github.com/Teltta/fabled-theme/releases/latest/download/fabled-theme.zip)
-.
-2. Extract it into your themes folder.
-
-Windows: `%APPDATA%\replugged\themes`
-Linux: `~/.config/replugged/themes`
+1. Download [this file](https://github.com/Teltta/fabled-theme/releases/latest/download/dev.Teltta.Fabled.asar) and put it into your replugged themes folder.
+    - **Windows** `%appdata%/replugged/themes`
+    - **macOS** `~/Library/Application Support/replugged/themes`
+    - **Linux** `~/.config/replugged/themes`
 
 ## Troubleshooting
 
