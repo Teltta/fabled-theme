@@ -1,5 +1,7 @@
 # Fabled Theme For Replugged
 
+<img src="./assets/image.png">
+
 ## Install
 
 1. Clone this repository and cd into it

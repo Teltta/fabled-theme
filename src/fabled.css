@@ -1,10 +1,11 @@
-/* Color stuff */
+/* Color Stuff */
 .theme-dark, .theme-light {
   --background-primary: #22272e !important;
   --background-secondary: #1d2229 !important;
   --background-secondary-alt: #181d24 !important;
   --background-tertiary: #13181f !important;
   --background-message-hover: #21252b !important;
+  --background-floating: #171a1f !important;
 
   --channeltextarea-background: #2d333b !important;
   --input-background: #10151c !important;
@@ -37,7 +38,6 @@
 .containerDefault-YUSmu3 {
   border-radius: 0px !important;
   opacity: 1 !important;
-  padding: 0px !important;
   margin: 0px !important;
 }
 
@@ -61,7 +61,7 @@
 }
 
 
-/*Mac topbar buttons*/
+/*Mac Topbar Buttons*/
 .winButton-3UMjdg > svg {
   display: none;
 }
@@ -106,7 +106,7 @@
   background-color: var(--background-secondary-alt) !important;
 }
 .reactionMe-1PwQAc {
-  background-color: var(--brand-experiment-55a) !important;
+  background-color: var(--brand-experiment-45a) !important;
 }
 
 /* Search Bar */
@@ -143,22 +143,19 @@
 .searchResultsWrap-5RVOkx {
   width: 520px !important;
 }
-.searchOption-3u1gRt::after {
+.searchOption-3u1gRt::after, .option-ayUoaq::after {
   display: none !important;
 }
 
-/* Wider Threads and Pins*/
+/* Wider Threads & Pins*/
 .messagesPopoutWrap-3zryHW, .container-3XgAHv {
   width: 40vw !important;
 }
 
 /* User Info Field */
 .container-YkUktl > .avatarWrapper-1B9FTW {
-  /*content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 3 24 21' width='30px' height='30px' fill='%23b9bbbe'> <circle cx='12' cy='10' r='5' /> <circle cx='12' cy='24' r='9'/> </svg>") !important;
-  */
   height: 20px !important;
   min-width: 15% !important;
-  /*background-color: var(--input-background) !important;*/
   padding: 6px 7px 6px 4px !important;
 }
 .avatarWrapper-1B9FTW > .nameTag-sc-gpq { /* remove name and status text */
@@ -172,16 +169,16 @@
 }
 
 /* No Rounding */
-.buttons-3dF5Kd>.wrapper-2vIMkT, .menu-1QACrS, .labelContainer-2vJzYL, .embedFull-1HGV2S, .botTag-7aX5WZ, .button-1EGGcP, .select-1Ia3hD, .component-ifCTxY {
+.buttons-3dF5Kd>.wrapper-2vIMkT, .menu-1QACrS, .labelContainer-2vJzYL, .embedFull-1HGV2S, .botTag-7aX5WZ, .button-1EGGcP, .select-1Ia3hD, .component-ifCTxY, .contentWrapper-3vHNP2 {
   border-radius: 0px !important;
 }
 
-/* Top Bar Text */
+/* Topbar Discord Logo */
 .titleBar-1it3bQ > .wordmark-2u86JB {
   padding-left: 50% !important;
 }
 
-/* Remove Useless Buttons from top right */
+/* Remove Useless Buttons From Top Right */
 .iconWrapper-2awDjA[aria-label="Inbox"], .iconWrapper-2awDjA[aria-label="Help"] {
   display: none !important;
 }
@@ -191,7 +188,7 @@
   filter: brightness(1.9) !important;
 }
 
-/* Embed, codeblock and image shadows */
+/* Embed, Codeblock & Image Shadows */
 .imageWrapper-oMkQl4, .embedFull-1HGV2S {
   box-shadow: 7px 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
@@ -199,19 +196,14 @@ code {
   box-shadow: 7px 5px 15px -5px rgba(0, 0, 0, 0.5);
 }
 
-/* New messages & jump to present bar*/
+/* New Messages & Jump To Present Bar*/
 .newMessagesBar-1hF-9G, .jumpToPresentBar-1cEnH0 {
   border-radius: 0px !important;
   opacity: 0.8 !important;
 }
 
-.divider-IqmEqJ {
-  border: 1px solid var(--divider-color) !important;
-  border-top: 1px solid var(--divider-color) !important;
-}
-
 /* Server Browser Background & App Directory Background*/
-.pageWrapper-2PwDoS, .directoryModal-YJsOMv {
+.pageWrapper-2PwDoS, .directoryModal-YJsOMv, .chat-2ZfjoI, .header-3xB4vB {
   background-color: var(--background-primary) !important;
 }
 
@@ -230,4 +222,19 @@ code {
   background-color: var(--background-tertiary) !important;
   padding: 1px 10px 5px 10px !important;
   margin: 8px !important;
+}
+
+/* Different Menu Backgrounds */
+.reactors-1VXca7, .message-G6O-Wv {
+  background-color: var(--background-primary) !important;
+}
+
+/* Higher Contrast For Forum Channel Post Amount Number */
+.channelInfo-3jN1ay > .text-xs-semibold-3E_l31 {
+  color: var(--channels-default) !important;
+}
+
+/* Server Folders*/
+.expandedFolderBackground-1kSAf6, .expandedFolderIconWrapper-3RwQpD {
+  background-color: var(--channeltextarea-background);
 }
