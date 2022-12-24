@@ -34,7 +34,7 @@
 .modeSelected-3DmyhH {
   background-color: var(--background-modifier-selected) !important;
 }
-.containerDefault-YUSmu3:hover:not(.selected-2TbFuo) .wrapper-NhbLHG:hover{
+.containerDefault-YUSmu3:hover:not(.selected-2TbFuo) .wrapper-NhbLHG:hover {
   background-color: var(--background-modifier-hover) !important;
 }
 .containerDefault-YUSmu3 {
@@ -272,6 +272,7 @@ nnelInfo-3jN1ay > .text-xs-semibold-3E_l31 {
 }
 
 /* Server Folders*/
-.expandedFolderBackground-1kSAf6, .expandedFolderIconWrapper-3RwQpD {
+.expandedFolderBackground-1kSAf6,
+.expandedFolderIconWrapper-3RwQpD {
   background-color: var(--channeltextarea-background);
 }
