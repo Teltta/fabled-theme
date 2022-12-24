@@ -1,7 +1,7 @@
 {
   "name": "fabled-theme",
   "version": "1.0.0",
-  "description": "A theme template",
+  "description": "Fabled Theme",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "author": "Teltta#2064",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@electron/asar": "^3.2.1",
     "@parcel/config-default": "^2.8.2",

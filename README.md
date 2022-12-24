@@ -2,11 +2,10 @@
 
 ## Install
 
-1. [Create a copy of this template](https://github.com/replugged-org/theme-template/generate)
-2. Clone your new repository and cd into it
-3. Install dependencies: `pnpm i`
-4. Build the theme: `pnpm run build`
-5. Reload Discord to load the theme
+1. Clone this repository and cd into it
+2. Install dependencies: `pnpm i`
+3. Build the theme: `pnpm run build`
+4. Reload Discord to load the theme
 
 Or
 
