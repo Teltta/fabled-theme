@@ -108,7 +108,7 @@
   background-color: var(--background-secondary-alt) !important;
 }
 .reactionMe-1PwQAc {
-  background-color: var(--brand-experiment-45a) !important;
+  background-color: var(--brand-experiment-50a) !important;
 }
 .reaction-3vwAF2 .reactionInner-YJjOtT {
   padding: 0 0.375rem;
@@ -134,9 +134,16 @@
 /* Input Field */
 .form-3gdLxP {
   background-color: var(--channeltextarea-background) !important;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .form-3gdLxP::before {
   display: none !important;
+}
+.channelTextArea-1FufC0 > .scrollableContainer-15eg7h,
+.channelTextArea-1FufC0 > .attachedBars-2BCP3l {
+  padding-left: 16px !important;
+  padding-right: 18px !important;
 }
 .buttons-uaqb-5 {
   opacity: 0;
@@ -171,7 +178,7 @@
   padding: 6px 7px 6px 4px !important;
 }
 .avatarWrapper-1B9FTW > .nameTag-sc-gpq {
-  /* remove name and status text */
+  /* Remove Name & Status */
   display: none !important;
 }
 .container-YkUktl > .directionRow-2Iu2A9 > .button-12Fmur {
@@ -190,7 +197,9 @@
 .button-1EGGcP,
 .select-1Ia3hD,
 .component-ifCTxY,
-.contentWrapper-3vHNP2 {
+.contentWrapper-3vHNP2,
+.userPopoutOuter-3AVBmJ,
+.attachedBars-2BCP3l {
   border-radius: 0px !important;
 }
 
@@ -226,7 +235,7 @@ code {
   opacity: 0.8 !important;
 }
 
-/* Server Browser Background & App Directory Background*/
+/* Server Browser Background & App Directory Background */
 .pageWrapper-2PwDoS,
 .directoryModal-YJsOMv,
 .chat-2ZfjoI,
@@ -234,7 +243,7 @@ code {
   background-color: var(--background-primary) !important;
 }
 
-/* Random White Backgrounds (fix yo shit discord)*/
+/* Random White Backgrounds (fix yo shit discord) */
 .footerSeparator-VzAYwb {
   background-color: var(--background-secondary-alt) !important;
 }
@@ -267,12 +276,37 @@ code {
 .expandedFolderIconWrapper-3RwQpD {
   background-color: var(--channeltextarea-background);
 }
-nnelInfo-3jN1ay > .text-xs-semibold-3E_l31 {
-  color: var(--channels-default) !important;
+
+/* Unread Pills (Server & Channel) */
+.listItem-3SmSlK > .pill-2RsI5Q > .item-2LIpTv {
+  background-color: var(--header-secondary) !important;
+}
+.unreadRelevant-2f-VSK {
+  background-color: var(--header-secondary) !important;
 }
 
-/* Server Folders*/
-.expandedFolderBackground-1kSAf6,
-.expandedFolderIconWrapper-3RwQpD {
-  background-color: var(--channeltextarea-background);
+/* User Modal */
+.userPopoutInner-1hXSeY .eyebrow-Ejf06y {
+  display: none !important;
+}
+.activity-E0U09Y > .headerContainer-1wJjOa,
+.activity-E0U09Y > .platformIcon-k3yytQ {
+  display: none !important;
+}
+.textarea-_59yqs[aria-label="Note"]:focus {
+  height: 90px !important;
+}
+.lastSection-3_1yKt > .messageInputContainer-2rGDH8 {
+  display: none !important;
+}
+.role-2TIOKu {
+  border: none !important;
+}
+
+/* Remove Invite To Server And Remove Friend Buttons From User Context Menu */
+.labelContainer-2vJzYL[id="user-context-invite-to-server"] {
+  display: None;
+}
+.labelContainer-2vJzYL[id="user-context-remove-friend"] {
+  display: None;
 }
