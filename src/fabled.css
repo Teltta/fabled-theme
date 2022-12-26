@@ -1,6 +1,5 @@
 /* Color Stuff */
-.theme-dark,
-.theme-light {
+.theme-dark {
   --background-primary: #22272e !important;
   --background-secondary: #1d2229 !important;
   --background-secondary-alt: #181d24 !important;
@@ -29,6 +28,35 @@
   --divider-color: var(--text-link) !important;
 }
 
+.theme-light {
+  --background-primary: #ddd8d1 !important;
+  --background-secondary: #e2ddd6 !important;
+  --background-secondary-alt: #e7e2db !important;
+  --background-tertiary: #ece7e0 !important;
+  --background-message-hover: #dedad4 !important;
+  --background-floating: #e8e5e0 !important;
+
+  --channeltextarea-background: #d2ccc4 !important;
+  --input-background: #efeae3 !important;
+  --modal-background: var(--background-secondary) !important;
+  --channels-default: #7e5e3e !important;
+  --focus-primary: #ff4f0b !important;
+  --primary-dark-630: var(--background-secondary-alt) !important;
+
+  --background-modifier-selected: #d4c2a7 !important;
+  --background-modifier-hover: #dfd1bd !important;
+
+  --background-mentioned: var(--brand-experiment-20a) !important;
+  --background-mentioned-hover: var(--brand-experiment-30a) !important;
+
+  --header-primary: #000000 !important;
+  --header-secondary: #7e5e3e !important;
+  --text-normal: #232221 !important;
+  --text-muted: #7f7b73 !important;
+  --text-link: #00b0f4 !important;
+  --divider-color: var(--text-link) !important;
+}
+
 /* Channels */
 .selected-2TbFuo,
 .modeSelected-3DmyhH {
@@ -49,10 +77,7 @@
 }
 
 /* User Banners */
-.banner-2boKnS {
-  background-color: var(--background-secondary-alt) !important;
-}
-.popoutBanner-116rVDY {
+.popoutBanner-16rVDY {
   background-color: var(--background-secondary-alt) !important;
 }
 .profileBanner-33-uE1 {
@@ -239,7 +264,8 @@ code {
 .pageWrapper-2PwDoS,
 .directoryModal-YJsOMv,
 .chat-2ZfjoI,
-.header-3xB4vB {
+.header-3xB4vB,
+.perksModal-CLcR1c {
   background-color: var(--background-primary) !important;
 }
 
