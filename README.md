@@ -1,13 +1,16 @@
 # Fabled Theme For Replugged
 
-<img src="./assets/image.png">
-
 ## Install
 
 1. Download [this file](https://github.com/Teltta/fabled-theme/releases/latest/download/dev.Teltta.FabledTheme.asar) and put it into your replugged themes folder.
     - **Windows** `%appdata%/replugged/themes`
     - **macOS** `~/Library/Application Support/replugged/themes`
     - **Linux** `~/.config/replugged/themes`
+
+## Screenshots
+
+<img src="./assets/image.png">
+<img src="./assets/image2.png">
 
 ## Troubleshooting
 
