@@ -26,6 +26,11 @@
   --text-muted: #80848c !important;
   --text-link: #00b0f4 !important;
   --divider-color: var(--text-link) !important;
+
+  --mention-brightness: 2.2;
+  --mention-wrapper: var(--brand-experiment-30a);
+  --mention-wrapper-text: var(--brand-experiment-330);
+  --mention-wrapper-hover: 150%;
 }
 
 .theme-light {
@@ -55,6 +60,11 @@
   --text-muted: #7f7b73 !important;
   --text-link: #00b0f4 !important;
   --divider-color: var(--text-link) !important;
+
+  --mention-brightness: -2.2;
+  --mention-wrapper: var(--brand-experiment-30a);
+  --mention-wrapper-text: var(--brand-experiment-600);
+  --mention-wrapper-hover: 50%;
 }
 
 /* Channels */
@@ -62,13 +72,19 @@
 .modeSelected-3DmyhH {
   background-color: var(--background-modifier-selected) !important;
 }
+.wrapper-NhbLHG:active {
+  background-color: var(--background-modifier-selected) !important;
+}
 .containerDefault-YUSmu3:hover:not(.selected-2TbFuo) .wrapper-NhbLHG:hover {
-  background-color: var(--background-modifier-hover) !important;
+  background-color: var(--background-modifier-hover);
 }
 .containerDefault-YUSmu3 {
   border-radius: 0px !important;
   opacity: 1 !important;
   margin: 0px !important;
+}
+.wrapper-NhbLHG:active > .content-1gYQeQ {
+  background-color: unset;
 }
 
 /* Forum Channel */
@@ -84,6 +100,9 @@
   background-color: var(--background-secondary-alt) !important;
 }
 .settingsBanner-15-pZk {
+  background-color: var(--background-secondary-alt) !important;
+}
+.userProfileInnerThemedNonPremium-1gT-zY .profileBanner-2zIsK7 {
   background-color: var(--background-secondary-alt) !important;
 }
 
@@ -127,18 +146,22 @@
 }
 
 /* Reactions */
-.reaction-3vwAF2 {
+.reaction-3vwAF2,
+.reaction-102jx9 {
   border: none;
   border-radius: 0px !important;
   background-color: var(--background-secondary-alt) !important;
 }
-.reactionMe-1PwQAc {
+.reactionMe-1PwQAc,
+.reactionMe-2zhiyZ {
   background-color: var(--brand-experiment-50a) !important;
 }
-.reaction-3vwAF2 .reactionInner-YJjOtT {
+.reaction-3vwAF2 .reactionInner-YJjOtT,
+.reaction-102jx9 .reactionInner-1po5__ {
   padding: 0 0.375rem;
 }
-.reaction-3vwAF2 .reactionCount-26U4As {
+.reaction-3vwAF2 .reactionCount-26U4As,
+.reaction-102jx9 .reactionInner-1po5__ {
   color: var(--text-muted);
 }
 
@@ -224,8 +247,25 @@
 .component-ifCTxY,
 .contentWrapper-3vHNP2,
 .userPopoutOuter-3AVBmJ,
-.attachedBars-2BCP3l {
+.attachedBars-2BCP3l,
+.mainCard-3KBsBI,
+.tag-19iIl1,
+.memberInner--L4X2b,
+.lookFilled-yCfaCM,
+.wrapper-3t3Yqv .controlButton-2PMNom {
   border-radius: 0px !important;
+}
+
+/* Camera & Mute Buttons In Calls */
+.wrapper-3t3Yqv .staticButton-1oD4l7 {
+  position: relative;
+  border-radius: 0px !important;
+}
+.controlButton-2PMNom .contextMenuNub-NuTZ_U {
+  border-radius: 0px;
+}
+.controlButton-2PMNom .contextMenuNub-NuTZ_U:hover {
+  background-color: var(--primary-dark-700) !important;
 }
 
 /* Topbar Discord Logo */
@@ -239,9 +279,18 @@
   display: none !important;
 }
 
+/* Message Mention */
 .messageListItem-ZZ7v6g > .mentioned-Tre-dv::before {
   background-color: var(--background-mentioned) !important;
-  filter: brightness(1.9) !important;
+  filter: brightness(var(--mention-brightness)) !important;
+  width: 3px;
+}
+.messageContent-2t3eCI > .wrapper-1ZcZW- {
+  color: var(--mention-wrapper-text) !important;
+  background: var(--mention-wrapper) !important;
+}
+.messageContent-2t3eCI > .wrapper-1ZcZW-:hover {
+  filter: brightness(var(--mention-wrapper-hover))
 }
 
 /* Embed, Codeblock & Image Shadows */
@@ -258,15 +307,6 @@ code {
 .jumpToPresentBar-1cEnH0 {
   border-radius: 0px !important;
   opacity: 0.8 !important;
-}
-
-/* Server Browser Background & App Directory Background */
-.pageWrapper-2PwDoS,
-.directoryModal-YJsOMv,
-.chat-2ZfjoI,
-.header-3xB4vB,
-.perksModal-CLcR1c {
-  background-color: var(--background-primary) !important;
 }
 
 /* Random White Backgrounds (fix yo shit discord) */
@@ -291,7 +331,14 @@ code {
 
 /* Different Menu Backgrounds */
 .reactors-1VXca7,
-.message-G6O-Wv {
+.message-G6O-Wv,
+.pageWrapper-2PwDoS,
+.directoryModal-YJsOMv,
+.chat-2ZfjoI,
+.header-3xB4vB,
+.perksModal-CLcR1c,
+.uploadModal-2ie9O_,
+.modalSize-3WSXDU {
   background-color: var(--background-primary) !important;
 }
 
