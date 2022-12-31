@@ -290,7 +290,7 @@
   background: var(--mention-wrapper) !important;
 }
 .messageContent-2t3eCI > .wrapper-1ZcZW-:hover {
-  filter: brightness(var(--mention-wrapper-hover))
+  filter: brightness(var(--mention-wrapper-hover));
 }
 
 /* Embed, Codeblock & Image Shadows */
