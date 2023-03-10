@@ -31,6 +31,8 @@
   --mention-wrapper: var(--brand-experiment-30a);
   --mention-wrapper-text: var(--brand-experiment-330);
   --mention-wrapper-hover: 150%;
+  --scrollbar-track: #1d2229;
+  --scrollbar-thumb: #13181f;
 }
 
 .theme-light {
@@ -65,6 +67,17 @@
   --mention-wrapper: var(--brand-experiment-30a);
   --mention-wrapper-text: var(--brand-experiment-600);
   --mention-wrapper-hover: 50%;
+  --scrollbar-track: #e2ddd6;
+  --scrollbar-thumb: #ece7e0;
+}
+
+html {
+  --scrollbar-thin-thumb: var(--scrollbar-thumb) !important;
+  --scrollbar-auto-thumb: var(--scrollbar-thumb) !important;
+  --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thumb) !important;
+
+  --scrollbar-auto-scrollbar-color-track: var(--scrollbar-track) !important;
+  --scrollbar-auto-track: var(--scrollbar-track) !important;
 }
 
 /* Channels */
@@ -161,8 +174,8 @@
   padding: 0 0.375rem;
 }
 .reaction-3vwAF2 .reactionCount-26U4As,
-.reaction-102jx9 .reactionInner-1po5__ {
-  color: var(--text-muted);
+.reaction-102jx9 .reactionCount-SWXh9W {
+  filter: brightness(var(--mention-wrapper-hover)); /* Re-used a lil bit of vars */
 }
 
 /* Search Bar */
@@ -173,10 +186,10 @@
 }
 
 /* Hide Useless Buttons In Input Field */
-.button-f2h6uQ[aria-label="Send a gift"],
-.button-f2h6uQ[aria-label="Open GIF picker"],
-.button-f2h6uQ[aria-label="Open sticker picker"] {
-  display: None;
+.button-ejjZWC[aria-label="Send a gift"],
+.button-ejjZWC[aria-label="Open GIF picker"],
+.button-ejjZWC[aria-label="Open sticker picker"] {
+  display: none;
 }
 
 /* Input Field */
@@ -320,10 +333,12 @@ code {
   padding: 3px 0px 3px 5px !important;
   margin-right: 8px !important;
 }
+.toolbar-3_r2xA {
+  padding: 3px 5px 3px 5px;
+  background-color: var(--background-tertiary);
+}
 .toolbar-3_r2xA > .iconWrapper-2awDjA {
-  background-color: var(--background-tertiary) !important;
   padding: 1px 10px 5px 10px !important;
-  margin: 8px !important;
 }
 .toolbar-3_r2xA > .iconWrapper-2awDjA > .iconBadge-3Mmg92 {
   margin-right: 22% !important;
@@ -338,8 +353,16 @@ code {
 .header-3xB4vB,
 .perksModal-CLcR1c,
 .uploadModal-2ie9O_,
-.modalSize-3WSXDU {
+.modalSize-3WSXDU,
+.title-31SJ6t {
   background-color: var(--background-primary) !important;
+}
+.list-2u03C-,
+.autocomplete-3NRXG8 {
+  background-color: var(--background-secondary-alt) !important;
+}
+.categoryHeader-OpJ1Ly {
+  background-color: var(--background-tertiary) !important;
 }
 
 /* Higher Contrast For Forum Channel Post Amount Number */
@@ -362,7 +385,7 @@ code {
 }
 
 /* User Modal */
-.userPopoutInner-1hXSeY .eyebrow-Ejf06y {
+.userPopoutInner-1hXSeY .eyebrow-1Shfyi {
   display: none !important;
 }
 .activity-E0U09Y > .headerContainer-1wJjOa,
@@ -380,9 +403,7 @@ code {
 }
 
 /* Remove Invite To Server And Remove Friend Buttons From User Context Menu */
-.labelContainer-2vJzYL[id="user-context-invite-to-server"] {
-  display: None;
-}
+.labelContainer-2vJzYL[id="user-context-invite-to-server"],
 .labelContainer-2vJzYL[id="user-context-remove-friend"] {
-  display: None;
+  display: none;
 }

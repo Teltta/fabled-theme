@@ -1,6 +1,6 @@
 {
   "name": "fabled-theme",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A minimalistic(ish) theme inspired by the look of github.",
   "engines": {
     "node": ">=14.0.0"
@@ -17,14 +17,10 @@
   "author": "Teltta#2064",
   "license": "MIT",
   "devDependencies": {
-    "@electron/asar": "^3.2.1",
-    "@parcel/config-default": "^2.8.2",
-    "@parcel/core": "^2.8.2",
-    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/config-default": "^2.8.3",
+    "@parcel/core": "^2.8.3",
     "@types/node": "^18.11.15",
-    "parcel": "^2.8.2",
     "prettier": "^2.8.1",
-    "replugged": "4.0.0-beta0.17",
-    "tsx": "^3.12.1"
+    "replugged": "^4.1.0"
   }
 }
