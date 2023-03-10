@@ -2,10 +2,7 @@
 
 ## Install
 
-1. Download [this file](https://github.com/Teltta/fabled-theme/releases/latest/download/dev.Teltta.FabledTheme.asar) and put it into your replugged themes folder.
-    - **Windows** `%appdata%/replugged/themes`
-    - **macOS** `~/Library/Application Support/replugged/themes`
-    - **Linux** `~/.config/replugged/themes`
+[![Install in Replugged](https://img.shields.io/badge/-Install%20in%20Replugged-blue?style=for-the-badge&logo=none)](https://replugged.dev/install?identifier=Teltta/fabled-theme&source=github)
 
 ## Screenshots
 
