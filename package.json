@@ -1,6 +1,6 @@
 {
   "name": "fabled-theme",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A minimalistic(ish) theme inspired by the look of github.",
   "engines": {
     "node": ">=18.0.0",
