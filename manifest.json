@@ -14,5 +14,7 @@
   },
   "license": "MIT",
   "type": "replugged-theme",
-  "main": "src/fabled.css"
+  "main": "src/fabled.css",
+  "source": "https://github.com/Teltta/fabled-theme",
+  "image": "https://i.imgur.com/Akuk0Qp.png"
 }
