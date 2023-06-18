@@ -145,17 +145,17 @@ html {
 .winButtonClose-3Q8ZH5:hover::after {
   background-color: rgba(255, 96, 92, 0.5);
 }
-.winButtonMinMax-3RsPUg[aria-label="Maximize"]::after {
+[class^="winButtonMinMax-"]::after {
   background-color: #ffbd44;
 }
-.winButtonMinMax-3RsPUg[aria-label="Maximize"]:hover::after {
-  background-color: rgba(255, 189, 68, 0.5);
+[class^="winButtonMinMax-"]:hover::after {
+  opacity: 0.5;
 }
-.winButtonMinMax-3RsPUg[aria-label="Minimize"]::after {
+[class^="winButtonMinMax-"]:last-child::after {
   background-color: #00ca4e;
 }
-.winButtonMinMax-3RsPUg[aria-label="Minimize"]:hover::after {
-  background-color: rgba(0, 202, 78, 0.5);
+[class^="winButtonMinMax-"]:last-child:hover::after {
+  opacity: 0.5;
 }
 
 /* Reactions */
@@ -248,6 +248,9 @@ html {
   margin-right: 4px !important;
   background-color: var(--input-background) !important;
 }
+.container-YkUktl div:has(button) {
+  margin-left: 0px !important;
+}
 
 /* No Rounding */
 .buttons-3dF5Kd > .wrapper-2vIMkT,
@@ -282,13 +285,13 @@ html {
 }
 
 /* Topbar Discord Logo */
-.titleBar-1it3bQ > .wordmark-2u86JB {
+[class*="titleBar-"] > [class*="wordmark-"] {
   padding-left: 50% !important;
 }
 
 /* Remove Useless Buttons From Top Right */
-.iconWrapper-2awDjA[aria-label="Inbox"],
-.iconWrapper-2awDjA[aria-label="Help"] {
+[class*="iconWrapper-"][aria-label="Inbox"],
+[class*="iconWrapper-"][aria-label="Help"] {
   display: none !important;
 }
 
@@ -298,11 +301,11 @@ html {
   filter: brightness(var(--mention-brightness)) !important;
   width: 3px;
 }
-.messageContent-2t3eCI > .wrapper-1ZcZW- {
+[class*="messageContent-"] > [class*="wrapper-"] {
   color: var(--mention-wrapper-text) !important;
   background: var(--mention-wrapper) !important;
 }
-.messageContent-2t3eCI > .wrapper-1ZcZW-:hover {
+[class*="messageContent-"] > [class*="wrapper-"]:hover {
   filter: brightness(var(--mention-wrapper-hover));
 }
 
@@ -342,6 +345,9 @@ code {
 }
 .toolbar-3_r2xA > .iconWrapper-2awDjA > .iconBadge-3Mmg92 {
   margin-right: 22% !important;
+}
+[class^="container-"][aria-label*="Friends"] [class^="inviteToolbar-"] [class*="divider-"] {
+  display: none;
 }
 
 /* Different Menu Backgrounds */
@@ -385,17 +391,17 @@ code {
 }
 
 /* User Modal */
-.userPopoutInner-1hXSeY .eyebrow-1Shfyi {
+[class^="userPopoutInner-"] [class*="eyebrow-"] {
   display: none !important;
 }
-.activity-E0U09Y > .headerContainer-1wJjOa,
-.activity-E0U09Y > .platformIcon-k3yytQ {
+[class*="activity-"] > [class^="headerContainer-"],
+[class*="activity-"] > [class^="platformIcon-"] {
   display: none !important;
 }
-.textarea-_59yqs[aria-label="Note"]:focus {
+[class*="textarea-"][aria-label="Note"]:focus {
   height: 90px !important;
 }
-.lastSection-3_1yKt > .messageInputContainer-2rGDH8 {
+[class*="lastSection-"] > [class*="messageInputContainer-"] {
   display: none !important;
 }
 .role-2TIOKu {
@@ -403,7 +409,7 @@ code {
 }
 
 /* Remove Invite To Server And Remove Friend Buttons From User Context Menu */
-.labelContainer-2vJzYL[id="user-context-invite-to-server"],
-.labelContainer-2vJzYL[id="user-context-remove-friend"] {
+[class*="labelContainer-"][id="user-context-invite-to-server"],
+[class*="labelContainer-"][id="user-context-remove-friend"] {
   display: none;
 }

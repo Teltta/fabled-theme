@@ -7,10 +7,10 @@
     "discordID": "365145249074642956",
     "github": "Teltta"
   },
-  "version": "1.0.5",
+  "version": "1.0.6",
   "updater": {
-    "type": "github",
-    "id": "Teltta/fabled-theme"
+    "type": "store",
+    "id": "dev.Teltta.FabledTheme"
   },
   "license": "MIT",
   "type": "replugged-theme",
