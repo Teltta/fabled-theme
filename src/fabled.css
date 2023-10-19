@@ -20,6 +20,8 @@
   --background-mentioned: #1c2e46 !important;
   --background-mentioned-hover: #1a2a3f !important;
 
+  --info-warning-foreground: #3e659a !important;
+
   --header-primary: #ffffff !important;
   --header-secondary: #81a1c1 !important;
   --text-normal: #dcddde !important;
@@ -27,7 +29,8 @@
   --text-link: #00b0f4 !important;
   --divider-color: var(--text-link) !important;
 
-  --mention-brightness: 2.2;
+  --mention-before-color: #3e659abb;
+  --mention-color: #3e659a50;
   --mention-wrapper: var(--brand-experiment-30a);
   --mention-wrapper-text: var(--brand-experiment-330);
   --mention-wrapper-hover: 150%;
@@ -56,6 +59,8 @@
   --background-mentioned: var(--brand-experiment-20a) !important;
   --background-mentioned-hover: var(--brand-experiment-30a) !important;
 
+  --info-warning-foreground: #c19a65 !important;
+
   --header-primary: #000000 !important;
   --header-secondary: #7e5e3e !important;
   --text-normal: #232221 !important;
@@ -63,12 +68,13 @@
   --text-link: #00b0f4 !important;
   --divider-color: var(--text-link) !important;
 
-  --mention-brightness: -2.2;
+  --mention-before-color: #c19b65bb;
+  --mention-color: #c19b6550;
   --mention-wrapper: var(--brand-experiment-30a);
   --mention-wrapper-text: var(--brand-experiment-600);
   --mention-wrapper-hover: 50%;
   --scrollbar-track: #e2ddd6;
-  --scrollbar-thumb: #ece7e0;
+  --scrollbar-thumb: #d2ccc4;
 }
 
 html {
@@ -85,11 +91,14 @@ html {
 .modeSelected-3DmyhH {
   background-color: var(--background-modifier-selected) !important;
 }
-.wrapper-NhbLHG:active {
-  background-color: var(--background-modifier-selected) !important;
+.containerDefault-YUSmu3:hover:not(.selected-2TbFuo, :active) {
+  background-color: var(--background-modifier-hover) !important;
 }
-.containerDefault-YUSmu3:hover:not(.selected-2TbFuo) .wrapper-NhbLHG:hover {
-  background-color: var(--background-modifier-hover);
+.containerDefault-YUSmu3:active {
+  background-color: var(--background-modifier-active);
+}
+.link-1_kTxV {
+  background: transparent !important;
 }
 .containerDefault-YUSmu3 {
   border-radius: 0px !important;
@@ -136,14 +145,14 @@ html {
   border-radius: 50px;
   pointer-events: fill;
 }
-.winButtonClose-3Q8ZH5 {
+.winButtonClose-23zAIt {
   margin-right: 3px;
 }
-.winButtonClose-3Q8ZH5::after {
+.winButtonClose-23zAIt::after {
   background-color: #ff605c;
 }
-.winButtonClose-3Q8ZH5:hover::after {
-  background-color: rgba(255, 96, 92, 0.5);
+.winButtonClose-23zAIt:hover::after {
+  opacity: 0.5;
 }
 [class^="winButtonMinMax-"]::after {
   background-color: #ffbd44;
@@ -242,7 +251,7 @@ html {
   /* Remove Name & Status */
   display: none !important;
 }
-.container-1CH86i > .directionRow-2Iu2A9 > .button-12Fmur {
+.container-1CH86i > .flex-2S1XBF > .button-12Fmur {
   min-width: 40% !important;
   margin-left: 4px !important;
   margin-right: 4px !important;
@@ -268,7 +277,8 @@ html {
 .tag-19iIl1,
 .memberInner--L4X2b,
 .lookFilled-yCfaCM,
-.wrapper-3t3Yqv .controlButton-2PMNom {
+.wrapper-3t3Yqv .controlButton-2PMNom,
+.channelMention {
   border-radius: 0px !important;
 }
 
@@ -297,15 +307,17 @@ html {
 
 /* Message Mention */
 .messageListItem-ZZ7v6g > .mentioned-Tre-dv::before {
-  background-color: var(--background-mentioned) !important;
-  filter: brightness(var(--mention-brightness)) !important;
+  background-color: var(--mention-before-color) !important;
   width: 3px;
 }
-[class*="messageContent-"] > [class*="wrapper-"] {
+.messageListItem-ZZ7v6g > .mentioned-Tre-dv {
+  background-color: var(--mention-color) !important;
+}
+[class*="messageContent-"] > [class^="mention"][class*="wrapper-"] {
   color: var(--mention-wrapper-text) !important;
   background: var(--mention-wrapper) !important;
 }
-[class*="messageContent-"] > [class*="wrapper-"]:hover {
+[class*="messageContent-"] > [class^="mention"][class*="wrapper-"]:hover {
   filter: brightness(var(--mention-wrapper-hover));
 }
 
@@ -331,7 +343,7 @@ code {
 }
 
 /* Channel Title Background */
-.title-5wgnIa > .children-3xh0VB {
+.title-5wgnIa > div > .children-3xh0VB {
   background-color: var(--background-tertiary);
   padding: 3px 0px 3px 5px !important;
   margin-right: 8px !important;
@@ -406,10 +418,4 @@ code {
 }
 .role-2TIOKu {
   border: none !important;
-}
-
-/* Remove Invite To Server And Remove Friend Buttons From User Context Menu */
-[class*="labelContainer-"][id="user-context-invite-to-server"],
-[class*="labelContainer-"][id="user-context-remove-friend"] {
-  display: none;
 }
