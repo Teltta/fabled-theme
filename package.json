@@ -10,6 +10,7 @@
     "build": "replugged build theme",
     "watch": "replugged build theme --watch",
     "bundle": "replugged bundle theme",
+    "release": "replugged release",
     "lint": "prettier ./src --check",
     "lint:fix": "prettier ./src --write"
   },
@@ -17,10 +18,10 @@
   "author": "Teltta#2064",
   "license": "MIT",
   "devDependencies": {
-    "@parcel/config-default": "^2.10.0",
-    "@parcel/core": "^2.10.0",
-    "@types/node": "^20.8.7",
-    "prettier": "^3.0.3",
-    "replugged": "^4.6.5"
+    "@parcel/config-default": "^2.9.3",
+    "@parcel/core": "^2.9.3",
+    "@types/node": "^18.17.6",
+    "prettier": "^2.8.8",
+    "replugged": "^4.6.0"
   }
 }
